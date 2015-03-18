@@ -1,7 +1,7 @@
 {
   "name": "react-opti",
   "version": "0.1.0",
-  "description": "Server-side React with prefetched links",
+  "description": "Isomorphic React",
   "main": "server.js",
   "repository": {
     "type": "git",

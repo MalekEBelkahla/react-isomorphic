@@ -8,7 +8,7 @@ var Html = React.createClass({
       <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <title>Optimized React</title>
+        <title>Isomorphic React</title>
         <link rel="stylesheet" href="/main.css" />
       </head>
       <body>

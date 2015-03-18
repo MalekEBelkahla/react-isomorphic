@@ -9,7 +9,7 @@ var App = React.createClass({
   render: function () {
     return (
       <div className="page-wrap">
-        <Header title="Optimized React" />
+        <Header title="Isomorphic React" />
         <main role="main">
           <RouteHandler />
         </main>
