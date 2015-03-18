@@ -8,7 +8,7 @@ import Header from './Header';
 var App = React.createClass({
   render: function () {
     return (
-      <div id="app">
+      <div className="page-wrap">
         <Header title="Optimized React" />
         <main role="main">
           <RouteHandler />
