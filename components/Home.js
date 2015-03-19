@@ -5,20 +5,22 @@ import React from 'react';
 var Home = React.createClass({
   getInitialState: function () {
     return {
-      message: 'Probably not'
+      loaded: false
     };
   },
   componentDidMount: function () {
     this.setState({
-      message: 'Yes'
+      loaded: true
     });
   },
   render: function () {
+    var message = this.state.loaded ? 'Yes' : 'No';
+
     return (
       <div className="container">
         <h3>Home</h3>
         <p>Is JavaScript loaded?</p>
-        <small>{this.state.message}</small>
+        <small>{message}</small>
       </div>
     );
   }
