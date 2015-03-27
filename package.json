@@ -5,13 +5,12 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jayway/react-opti"
+    "url": "https://github.com/jayway/react-isomorphic"
   },
   "scripts": {
     "start": "babel-node server.js",
     "debug": "babel-node --debug server.js",
-    "build": "browserify browser.js --debug > public/bundle.js",
-    "watch": "watchify browser.js --debug --verbose -o public/bundle.js"
+    "build": "./node_modules/webpack/bin/webpack.js --progress"
   },
   "author": "Joacim Löwgren",
   "license": "ISC",
@@ -24,14 +23,8 @@
     "serve-static": "^1.9.2"
   },
   "devDependencies": {
-    "babelify": "^5.0.4",
-    "browserify": "^9.0.3",
-    "reactify": "^1.1.0",
-    "watchify": "^2.4.0"
-  },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
+    "babel-core": "^4.7.16",
+    "babel-loader": "^4.2.0",
+    "webpack": "^1.7.3"
   }
 }
