@@ -7,9 +7,13 @@ Try turning off JavaScript in your browser and navigate around.
 ## Usage
 
 ```zsh
+# Install dependencies
 npm install
+
+# Build client
 npm run build
-# or `npm run watch`
+
+# Run server
 npm start
 ```
 
